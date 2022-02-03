@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body>
+        <h2>My introduction</h2>
+        <ul>
+            <li>Name:arbaz shah</li>
+            <li>DOB:14 august 2002</li>
+            <li>district:sambhal</li>
+            <li>state:UP</li>
+        </ul>
+        <h2>programming languages</h2>
+        <ol>
+            <li>python</li>
+            <li>java</li>
+            <li>C</li>
+            <li>C++</li>
+        </ol>
+        <table style="border: 2px solid black;">
+            <tbody><tr>
+                <th>Date</th>
+                <th>Topic</th>
+            </tr>
+            <tr>
+               <td>1st feb</td>
+               <td>structure</td>
+            </tr>
+            <tr>
+                <td>2nd feb</td>
+                <td>tag</td>
+            </tr>
+            <tr>
+                <td>2nd feb</td>
+                <td>attribute</td>
+            </tr>
+            <tr>
+                <td>2nd feb</td>
+                <td>anchor tag</td>
+            </tr>
+            <tr>
+                <td>2nd feb</td>
+                <td>image tag</td>
+            </tr>
+        </tbody></table>
+        <h1>My Intro</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+Porro, tempora saepe natus exercitationem provident, repudiandae, 
+molestiae sint est doloribus at laudantium hic dolor itaque inventore 
+pariatur. Dolore iste distinctio assumenda.</p>
+        <a href="https://youtu.be/CQ3qloKw_LQ" target="_blank">Youtube link</a>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
